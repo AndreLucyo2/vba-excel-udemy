@@ -3,5 +3,17 @@
 Banco de codigos e macros VBA
 
 ~~~VBA
-Esta é uma linha de código em vba.
+```
+	Sub cidades()
+
+		Range("A1", "D28").Copy
+		
+		Sheets.Add
+		
+		Range("A1").PasteSpecial
+		
+		Selection.EntireColumn.AutoFit
+
+	End Sub
+```
 ~~~
